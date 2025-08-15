@@ -5561,14 +5561,16 @@ public:
           for (UINT j = 0; j < bl[i].size(); j++){
             point nxt = place(svgScale, bl[i][j]);
             if ((bl[i][j].flags & DELME) > 0){
-              std::string tmp = vformat("<circle class=\"%s\" cx=\"%.4f\" cy=\"%.4f\" r=\"2\" />", "spcircle" + cuid, nxt.x, nxt.y);
+              std::string tcuid = "spcircle" + cuid;
+              std::string tmp = vformat("<circle class=\"%s\" cx=\"%.4f\" cy=\"%.4f\" r=\"2\" />", tcuid.c_str(), nxt.x, nxt.y);
               svg.addLine(tmp);
             }
           }
         }
         for (UINT i = 0; i < debug.size(); i++){
           point t = place(svgScale, debug[i]);
-          std::string tmp = vformat("<circle class=\"%s\" cx=\"%.4f\" cy=\"%.4f\" r=\"2\" />", "spcircle" + cuid, t.x, t.y);
+          std::string tcuid = "spcircle" + cuid;
+          std::string tmp = vformat("<circle class=\"%s\" cx=\"%.4f\" cy=\"%.4f\" r=\"2\" />", tcuid.c_str(), t.x, t.y);
           svg.addLine(tmp);
         }
       }

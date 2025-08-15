@@ -2,7 +2,7 @@
 for f in "topol.h" "elements.h" "strFuncts.h" \
          "debug.h" "scene.h" "palettes.h"
 do echo $f
-if [[ -e ../../$f ]]
+if [[ -e ../../../gh/$f ]]
 then
     if [[ -e $f ]]
     then
@@ -10,7 +10,7 @@ then
         rm $f
     fi
     echo "Creating new link."
-    ln ../../$f $f
+    ln ../../../gh/$f $f
 else
 echo "Target does not exist. Doing nothing."
 fi
