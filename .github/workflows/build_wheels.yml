@@ -57,8 +57,7 @@ jobs:
       id-token: write
     steps:
       # retrieve your distributions here
-
-       - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v5
         with:
           # unpacks all CIBW artifacts into dist/
           pattern: cibw-*
