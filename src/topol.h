@@ -6743,7 +6743,7 @@ public:
             std::cout << errorMessage << std::endl;
             bQuit = true;
           }
-          if (refreshScreen.isMax()) writeSVG();
+          //if (refreshScreen.isMax()) writeSVG();
           if (isStepFinished(step)){
             bQuit = true;
           }
