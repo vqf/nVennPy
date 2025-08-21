@@ -5553,7 +5553,7 @@ public:
         }
         // Add strokes
         for (i = 0; i < ngroups; i++){
-          svg.addLine("<use class=\"q" + num(i) + cuid + " outLine\" xlink:href=\"#bl" + num(i) + cuid + "\"/>");
+          svg.addLine("<use class=\"q" + num(i) + cuid + " outLine" + cuid + "\" xlink:href=\"#bl" + num(i) + cuid + "\"/>");
         }
       }
       if (showThis){
