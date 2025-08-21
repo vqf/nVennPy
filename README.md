@@ -23,7 +23,7 @@ Once the input is entered, users can also get the elements in a region with the 
     n.simulate()
     print(n.tosvg())
 
-![Example 1](./ex2.svg)
+![Example 1](./src/ex2.svg)
 
     n.get_venn_region(["Set1", "Set3"])
     ["POT1"]
@@ -33,4 +33,4 @@ Once the input is entered, users can also get the elements in a region with the 
     v = nvenn2.diagram("")
     
 
-![Example 2](./ex2.svg)
+![Example 2](./src/ex2.svg)
