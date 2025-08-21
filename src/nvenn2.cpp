@@ -24,5 +24,5 @@ PYBIND11_MODULE(nvenn2, m) {
     .def("set_font_size", &borderLine::setFontSize, py::arg("font_size") = 12)
     .def("get_venn_region", &borderLine::getVennRegionVectorL, py::arg("region"))
     .def("to_html", &borderLine::tohtml)
-    .def("tosvg", &borderLine::tosvg);
+    .def("to_svg", &borderLine::tosvg);
 }
