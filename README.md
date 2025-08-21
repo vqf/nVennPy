@@ -21,7 +21,6 @@ Once the input is entered, users can also get the elements in a region with the 
     import nvenn2
     n = nvenn2.diagram("Set1 TP53 SF3B1 POT1\nSet2 TP53 KRAS NRAS\nSet3 SF3B1 POT1 LMNA\nSet4 TP53 KRAS SF3B1", 2)
     n.simulate()
-    n.get_venn_region(["Set1", "Set3"])
     print(n.tosvg())
 
 ![Example 1](./ex2.svg)
