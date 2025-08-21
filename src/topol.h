@@ -6729,6 +6729,7 @@ public:
 
     bool simulate(bool verbose = false){
       restart_log();
+      reset();
       UINT cstep = currentStep;
       for (UINT step = currentStep; step < 8; step++){
         bool bQuit = false;
