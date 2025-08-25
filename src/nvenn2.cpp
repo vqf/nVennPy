@@ -4,9 +4,13 @@
 
 namespace py = pybind11;
 
+std::string hlpDiagram1 = "Creates Venn diagram from table.\n\nArgs:\n\ttable (string): text table containing the sets\n\tbycol (int): whether the sets \
+are in columns (1) or rows (2)";
+
 PYBIND11_MODULE(nvenn2, m) {
   py::class_<borderLine>(m, "diagram")
-    .def(py::init<const std::string &, unsigned int>())
+    .def(py::init<const std::string &, unsigned int>(), hlpDiagram1)
+    .def(py::init<const std::string &>())
     .def("simulate", &borderLine::simulate, py::arg("verbose") = false)
     .def("error_message", &borderLine::errorMsg)
     .def("error", &borderLine::err)
