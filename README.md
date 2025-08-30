@@ -30,7 +30,7 @@ Once the input is entered, users can also get the elements in a region with the 
     
 # Example 2
     import nvenn2
-    v = nvenn2.diagram("")
+    v = nvenn2.diagram("a 1 2\nb 2 3\nc 3 4\nd 4 5\ne 5 6\nf 6 7\ng 7 8\nh 8 9\nI 9 10\nj 10 1\n", 2)
     
 
 ![Example 2](./src/ex2.svg)
