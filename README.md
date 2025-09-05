@@ -34,3 +34,5 @@ Once the input is entered, users can also get the elements in a region with the 
     
 
 ![Example 2](./src/ex2.svg)
+
+There is a public jupyter notebook hosted by Binder [here](https://mybinder.org/v2/gh/vqf/codespaces-jupyter/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2Fdoc.ipynb).
