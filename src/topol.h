@@ -5973,7 +5973,10 @@ public:
         result.addLine("const outp = document.getElementById('reg');");
         result.addLine("const elements = " + setElements.asJSON() + ";");
 		result.addLine("function setout(nreg){");
-		result.addLine("\toutp.value = elements[nreg].join(\"\\n\");");
+		result.addLine("\toutp.value = \"\";");
+		result.addLine("\tif (elements[nreg] !== undefined){");
+		result.addLine("\t\toutp.value = elements[nreg].join(\"\\n\");");
+		result.addLine("\t}");
 		result.addLine("}");
 		result.addLine("function fromCircle(nreg){");
 		result.addLine("\tfor (let i = 0; i < cboxes.length; i++){");
