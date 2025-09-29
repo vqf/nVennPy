@@ -1,10 +1,13 @@
+
+[![Build](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml)
+
 # nVennPy
-This package adds a Python interface to the `nVenn2` algorithm to create generalized, quasi-proportional Venn diagrams. 
+This package adds a Python interface to the `nVenn2` algorithm to create generalized, quasi-proportional Venn diagrams. The release version is available from Pypi by running `pip install nvenn2` from an environment.
 
 ## The problem
-We have several `sets` composed of `elements`, like gene symbols. Each gene symbol can belong to one or more sets, which define `regions`. A region is defined by the sets it belongs to and the sets it does not belong to. 
+We have several `sets` composed of `elements`, like gene symbols. Each element can belong to one or more sets, which places it into a `region`. A region is defined by the sets it belongs to and the sets it does not belong to. 
 
-A proportional Venn diagrams shows sets inside lines that may intersect and define regions. The area of each region is approximately proportional to the number of gene symbols that belong to that region. The nVenn2 algorithm is also generalized, as it can be used on any number of sets. In practice, a Venn diagram with more that six sets is difficult to interpret. However, more sets can be used if most regions are empty (see example 2).
+A proportional Venn diagrams shows sets inside closed lines that may intersect and define regions. The area of each region is approximately proportional to the number of elements that belong to that region. The nVenn2 algorithm is also generalized, as it can be used on any number of sets. In practice, a Venn diagram with more that six sets is difficult to interpret. However, more sets can be used if most regions are empty (see example 2).
 
 ## Input
 The input for `nVenn2` is always a text table. The algorithm will try to guess the column separator (tab, space, comma or semicolon). Sets can be defined by row or column.  If sets are in rows, the first column contains the set names. If sets are in columns, the first row contains the set names. The table is passed to the `diagram()` method to create a new object. The second parameter tells the module whether the sets are in columns (`1`) or rows (`2`). A value of `0` (default) tells the module to try to figure out if the sets are in rows or columns.
