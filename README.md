@@ -1,5 +1,5 @@
 
-[![Build](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml)
+[![Build](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml/badge.svg?branch=master)](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml)
 
 # nVennPy
 This package adds a Python interface to the `nVenn2` algorithm to create generalized, quasi-proportional Venn diagrams. The release version is available from Pypi by running `pip install nvenn2` from an environment.
