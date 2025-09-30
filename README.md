@@ -1,3 +1,4 @@
+[![Build](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/vqf/nVennPy/actions/workflows/build_wheels.yml)
 
 
 # nVennPy
