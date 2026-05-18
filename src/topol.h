@@ -7149,7 +7149,8 @@ public:
     }
 
     bool pysim(UINT maxlevel = 1){
-      simulate(true, maxlevel);
+      bool result = simulate(true, maxlevel);
+      return result;
     }
 
 
