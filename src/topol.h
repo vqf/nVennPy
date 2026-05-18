@@ -7148,6 +7148,10 @@ public:
       return totry;
     }
 
+    bool pysim(UINT maxlevel = 1){
+      simulate(true, maxlevel);
+    }
+
 
     /** \brief Run the algorithm non-interactively.
      *
