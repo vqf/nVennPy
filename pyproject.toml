@@ -8,7 +8,7 @@ version = "2.0.37"
 license = "MIT"
 readme = "README.md"
 license-files = ["LICEN[CS]E"]
-description = "Python bindings to nVenn2 to create generalized, quasi-proportional Venn diagrams"
+description = "Python bindings to nVenn2 to create generalized, quasi-proportional Venn diagrams. Described in [doi 10.1093/bioadv/vbag183](https://doi.org/10.1093/bioadv/vbag183)."
 authors = [
   {name = "Victor Quesada", email = "quesadavictor@uniovi.es"}
 ]
