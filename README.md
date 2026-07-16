@@ -5,7 +5,7 @@
 This package adds a Python interface to the `nVenn2` algorithm to create generalized, quasi-proportional Venn diagrams. The release version is available from Pypi by running `pip install nvenn2` from an environment. The algorithm is described in *Samuel Pis-Vigil, María González-Pereira, Magda R Hamczyk, Víctor Quesada, nVenn2: faster, simpler generalized quasi-proportional Venn diagrams, Bioinformatics Advances, Volume 6, Issue 1, 2026, vbag183,* [doi 10.1093/bioadv/vbag183](https://doi.org/10.1093/bioadv/vbag183).
 
 ## The problem
-We have several `sets` composed of `elements`, like gene symbols. Each element can belong to one or more sets, which places it into a `region`. A region is defined by the sets it belongs to and the sets it does not belong to. 
+We have several `sets` composed of `elements`, like gene symbols. Each element can belong to one or more sets, which places it into a `region`. A region is defined by the sets it belongs to and the sets it does not belong to. The algorithm is described in *Samuel Pis-Vigil, María González-Pereira, Magda R Hamczyk, Víctor Quesada, nVenn2: faster, simpler generalized quasi-proportional Venn diagrams, Bioinformatics Advances, Volume 6, Issue 1, 2026, vbag183,* [doi 10.1093/bioadv/vbag183](https://doi.org/10.1093/bioadv/vbag183).
 
 A proportional Venn diagrams shows sets inside closed lines that may intersect and define regions. The area of each region is approximately proportional to the number of elements that belong to that region. The nVenn2 algorithm is also generalized, as it can be used on any number of sets. In practice, a Venn diagram with more that six sets is difficult to interpret. However, more sets can be used if most regions are empty (see example 2).
 
